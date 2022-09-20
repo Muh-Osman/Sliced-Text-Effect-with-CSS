@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    place-content: center;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    font-family: "oswald", sans-serif;
+    font-size: 16rem;
+    font-weight: 700;
+}
+
+.wrapper > div {
+    grid-area: 1/1/-1/-1;
+}
+
+.top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    background: linear-gradient(177deg, #000 53%, #fff 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+    color: transparent;
+}
+
